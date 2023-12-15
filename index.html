@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta cherset = "uft-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title > Control de asistencia Academica✍🏾 </title>
+        <script src="./javascript/control_de_asistencia.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <h3 id="subtitulo">Registra tu asistencia</h3>
+        </header>
+        <main>
+            <section id="Seleccionar-estudem">
+                <div>
+                    <button id="seleccion-1">Estudiantes</button>
+                </div>
+            </section>
+                <br>
+            <section id="Seleccionar-admin">
+                <div>
+                    <button id="seleccion-2">Administrador</button>
+                </div>
+            </section>
+
+            <selection id="imagencomputo"> 
+                    <img src="./Object/Object/Other 03.png" alt="imagenHd">
+            </selection>
+
+    <section id="Formas">
+        <div class="bloque-color"></div>
+        <div class="rectangulo-1"></div>
+        <div class="rectangulo-2"></div>
+    </section>
+<!--################################################################################################################3-->            
+            <section id="formulario_de_asistencia">
+                <form action="#" target="" method="get" name="formDatosPersonales" >
+                    <label for="Nombre">
+                        <span>Nombre</span>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="juan" autocomplete="name" required>
+                    </label>
+                    <label for="Apellido">
+                        <span>Apellido</span>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Perez" autocomplete="name" required>
+                    </label>
+                    <label for="Email">
+                        <span>Email</span>
+                        <input type="email" name="Email" id="Email" placeholder="example@gmai.com" autocomplete="email" required>
+                    </label>
+                    <label for="Tel">
+                        <span>Tel</span>
+                        <input type="tel" name="tel" id="Tel" placeholder="123456789" required>
+                    </label>
+                    <label for="Materia">
+                        <span>materia</span>
+                        <input type="text" name="Materia" id="Materia" placeholder="Patrones-de-software" required>
+                    </label>
+                    <input list="materia">
+                    <datalist id="materia">
+                        <option value="matematicas"></option>
+                        <option value="ingles"></option>
+                        <option value="fisica"></option>
+                        <option value="algebra"></option>
+                    </datalist>
+                    <input type="submit" name="enviar" value="enviar datos"/> <!--este input type="submit" nos sirve para realizar el envio del formulario-->  
+                </form>
+            </section>
+<!--################################################################################################################3-->            
+       
+            <section id="Logi">
+                <div id="contenedor">
+                    <div id="central">
+                        <div id="login">
+                            <div class="titulo">
+                                Bienvenido  Administrador
+                            </div>
+                            <form id="loginform" action="login.js" method="post">
+                                <span>Usuario</span>
+                                <input type="text" id="usuario" name="usuario" placeholder="" required>
+                                <span>Contraseña</span>
+                                <input type="password" id="contrasena" name="contrasena" placeholder="" required>
+                                <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button>
+                            </form>
+                        </div>
+                        <div class="inferior">
+                            <section id = "Regreso">
+                            <button id="boton-vover">Volver</button>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+</html>
